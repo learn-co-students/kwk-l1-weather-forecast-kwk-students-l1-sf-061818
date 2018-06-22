@@ -6,7 +6,7 @@ describe 'Weather Hash' do
     @nyc_weather = {
       :city => "New York",
       :description => "Partly Cloudy",
-      :temperature_farenheit => 75,
+      :temperature_farenheit => 66.3,
       :temperature_celcius => 19.1
     }
 
@@ -49,7 +49,7 @@ describe 'Weather Hash' do
   describe '#convert_temp' do
     it "accesses the Farenheit temperature from the hash and returns it as Celsius" do
 
-      expect(convert_temp(@nyc_weather)).to eq(23.89)
+      expect(convert_temp(@nyc_weather)).to eq(19.06)
     end
   end
 
